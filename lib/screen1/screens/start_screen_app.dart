@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app_material/change_to_main_screen_app.dart';
-import 'package:jp_app_material/main_screen_app.dart';
+import 'package:jp_app_material/screen1/widgets/change_to_main_screen_app.dart';
+import 'package:jp_app_material/screen2/screens/main_screen_app.dart';
 
 class StartScreenApp extends StatelessWidget {
   const StartScreenApp({super.key});
@@ -73,36 +73,6 @@ class StartScreenApp extends StatelessWidget {
                                   TextStyle(color: Colors.white, fontSize: 14),
                             ),
                             SizedBox(height: 30),
-                            //
-                            //__________________________________________________ Button
-                            // ElevatedButton(
-                            //   style: ButtonStyle(
-                            //     backgroundColor: WidgetStateProperty.all(
-                            //         const Color.fromARGB(255, 216, 173, 215)),
-                            //     shape: WidgetStateProperty.all<
-                            //         RoundedRectangleBorder>(
-                            //       RoundedRectangleBorder(
-                            //         borderRadius: BorderRadius.circular(8.0),
-                            //         side: const BorderSide(
-                            //           color: Color.fromARGB(245, 224, 86, 0),
-                            //           width: 0.3,
-                            //         ),
-                            //       ),
-                            //     ),
-                            //     fixedSize: WidgetStateProperty.all(
-                            //         const Size(220, 50)),
-                            //   ),
-                            //   child: const Text(
-                            //     'Order Now',
-                            //     style: TextStyle(
-                            //       fontSize: 18,
-                            //       fontWeight: FontWeight.bold,
-                            //       color: Colors.white,
-                            //     ),
-                            //   ),
-                            //   onPressed: () {},
-                            // ),
-
                             ChangeToMainScreenApp(),
 //
                           ],

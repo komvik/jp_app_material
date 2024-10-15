@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app_material/main_screen_app.dart';
+import 'package:jp_app_material/screen2/screens/main_screen_app.dart';
 
 class ChangeToMainScreenApp extends StatelessWidget {
   const ChangeToMainScreenApp({
