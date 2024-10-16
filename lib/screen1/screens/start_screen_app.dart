@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jp_app_material/screen1/widgets/change_to_main_screen_app.dart';
-import 'package:jp_app_material/screen2/screens/main_screen_app.dart';
+//import 'package:jp_app_material/screen2/screens/main_screen_app.dart';
 
 class StartScreenApp extends StatelessWidget {
   const StartScreenApp({super.key});

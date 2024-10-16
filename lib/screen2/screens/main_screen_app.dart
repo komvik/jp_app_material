@@ -93,9 +93,12 @@ class _MainScreenAppState extends State<MainScreenApp> {
                       itemBuilder: (BuildContext context, int index) {
                         return GestureDetector(
                           onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>
-                                    DetailedInfoScreen(item: cardData[index])));
+                            showModalBottomSheet(
+                                context: context,
+                                builder: (context) {
+                                  return DetailedInfoScreen(
+                                      item: cardData[index]);
+                                });
                           },
                           child: Container(
                               child: RecommendCard(item: cardData[index])),
