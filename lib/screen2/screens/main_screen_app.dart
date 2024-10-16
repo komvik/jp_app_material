@@ -21,7 +21,7 @@ class _MainScreenAppState extends State<MainScreenApp> {
                 image: AssetImage("assets/hintergrunde/bg_mainscreen.png"),
                 fit: BoxFit.cover)),
         child: Scaffold(
-          backgroundColor: Colors.transparent,
+          backgroundColor: const Color.fromARGB(26, 0, 0, 0),
           body: Container(
               width: 430,
               height: 900,

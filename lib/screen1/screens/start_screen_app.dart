@@ -17,11 +17,11 @@ class StartScreenApp extends StatelessWidget {
                 image: AssetImage("assets/hintergrunde/bg_startscreen.png"),
                 fit: BoxFit.cover)),
         child: Scaffold(
-          backgroundColor: Colors.transparent,
+          backgroundColor: const Color.fromARGB(17, 0, 0, 0),
           body: Container(
               width: 430,
               height: 900,
-              color: Colors.transparent,
+              color: const Color.fromARGB(21, 0, 0, 0),
               padding:
                   const EdgeInsets.only(top: 130, bottom: 0, left: 0, right: 0),
               //
@@ -52,8 +52,8 @@ class StartScreenApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(35),
                         child: BackdropFilter(
                           filter: ImageFilter.blur(
-                            sigmaX: 10,
-                            sigmaY: 10,
+                            sigmaX: 8,
+                            sigmaY: 8,
                           ),
                           child: Container(
                             decoration: BoxDecoration(
