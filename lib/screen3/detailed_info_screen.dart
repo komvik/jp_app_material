@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:jp_app_material/screen2/model/card_item.dart';
 
@@ -77,10 +79,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                       ),
                       Text(
                         "200",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14),
+                        style: TextStyle(color: Colors.white, fontSize: 14),
                       ),
                       SizedBox(
                         width: 35,
@@ -233,9 +232,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                               Text(
                                 "4.0",
                                 style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12),
+                                    color: Colors.white, fontSize: 12),
                               ),
                             ],
                           ),
@@ -392,26 +389,36 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
         Positioned(
           top: 720,
           left: 25,
-          child: Container(
-            width: 380,
-            height: 50,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
-              gradient: const LinearGradient(
-                colors: [
-                  Color.fromARGB(218, 235, 113, 202),
-                  Color.fromARGB(255, 245, 153, 168),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 1.05, sigmaY: 1.05),
+            child: Container(
+              width: 380,
+              height: 50,
+              decoration: BoxDecoration(
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 193, 102, 235),
+                    blurRadius: 6,
+                    offset: Offset(0, 3),
+                  )
                 ],
+                borderRadius: BorderRadius.circular(8),
+                gradient: const LinearGradient(
+                  colors: [
+                    Color.fromARGB(218, 235, 113, 202),
+                    Color.fromARGB(255, 245, 153, 168),
+                  ],
+                ),
               ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(95, 12, 10, 10),
-              child: Text(
-                "Add to order for  ${widget.item.cardPrise}",
-                style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(95, 12, 10, 10),
+                child: Text(
+                  "Add to order for  ${widget.item.cardPrise}",
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
               ),
             ),
           ),
