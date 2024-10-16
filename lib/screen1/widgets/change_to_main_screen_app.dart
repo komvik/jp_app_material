@@ -17,11 +17,11 @@ class ChangeToMainScreenApp extends StatelessWidget {
         width: 220,
         height: 50,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(11),
           gradient: const LinearGradient(
             colors: [
-              Color.fromARGB(218, 213, 90, 255),
-              Color.fromARGB(255, 227, 203, 124),
+              Color.fromARGB(255, 233, 112, 199),
+              Color.fromARGB(255, 246, 154, 175),
             ],
           ),
         ),

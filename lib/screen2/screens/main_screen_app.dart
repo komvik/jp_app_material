@@ -40,8 +40,132 @@ class _MainScreenAppState extends State<MainScreenApp> {
                             fontSize: 26,
                             fontWeight: FontWeight.bold),
                       )),
-                  //______________________________________
 
+                  ///
+                  ///
+//___________________________________________ List Viev Panels
+
+                  Positioned(
+                    top: 170,
+                    left: 20,
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 40,
+                            width: 160,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.white.withOpacity(0.4)),
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: const Row(
+                              children: [
+                                ///________________________1
+                                SizedBox(width: 15),
+                                Icon(
+                                  Icons.fastfood_outlined,
+                                  color: Colors.white54,
+                                  size: 18,
+                                ),
+                                SizedBox(width: 8),
+                                Text(
+                                  "All categories",
+                                  style: TextStyle(
+                                      color: Colors.white54,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Icon(
+                                  Icons.expand_more,
+                                  color: Colors.white54,
+                                  size: 22,
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          ///________________________2
+                          const SizedBox(width: 8),
+                          Container(
+                            height: 40,
+                            width: 95,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.white.withOpacity(0.4)),
+                                color: Colors.white.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: const Row(
+                              children: [
+                                SizedBox(width: 30),
+                                Text(
+                                  "Salty",
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 42, 41, 41),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          ///________________________3
+                          const SizedBox(width: 8),
+                          Container(
+                            height: 40,
+                            width: 95,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.white.withOpacity(0.4)),
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: const Row(
+                              children: [
+                                SizedBox(width: 27),
+                                Text(
+                                  "Sweet",
+                                  style: TextStyle(
+                                      color: Colors.white54,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          ///________________________4
+                          const SizedBox(width: 8),
+                          Container(
+                            height: 40,
+                            width: 95,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.white.withOpacity(0.4)),
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: const Row(
+                              children: [
+                                SizedBox(width: 27),
+                                Text(
+                                  "Sweet",
+                                  style: TextStyle(
+                                      color: Colors.white54,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  ///
+                  ///
+                  ///
+                  ///
                   Positioned(
                       top: 270,
                       left: 40,
@@ -49,7 +173,39 @@ class _MainScreenAppState extends State<MainScreenApp> {
                           scale: 1.14,
                           child: Image.asset("assets/details/Top Card.png"))),
                   //______________________________________
+                  ///
+                  ///
+                  ///
 
+                  const Positioned(
+                    top: 252,
+                    left: 280,
+                    child: Row(
+                      children: [
+                        SizedBox(height: 60),
+                        SizedBox(
+                          width: 65,
+                        ),
+                        SizedBox(
+                            width: 14,
+                            height: 14,
+                            child: Image(
+                                image: AssetImage("assets/grafiken/star.png"))),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "4,8",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white, fontSize: 10),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  ///
+                  ///
+                  ///
                   Positioned(
                       top: 280,
                       left: 30,
@@ -89,13 +245,13 @@ class _MainScreenAppState extends State<MainScreenApp> {
                               borderRadius: BorderRadius.circular(8),
                               boxShadow: const [
                                 BoxShadow(
-                                  color: Colors.blue,
+                                  color: Color.fromARGB(255, 193, 102, 235),
                                   blurRadius: 6,
                                   offset: Offset(0, 3),
                                 )
                               ],
                               border: Border.all(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 193, 102, 235),
                                 width: 1,
                               ),
                               gradient: const LinearGradient(
@@ -112,13 +268,29 @@ class _MainScreenAppState extends State<MainScreenApp> {
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 255, 255, 255)),
+                                    color: Colors.white60),
                               ),
                             ),
                           ),
                         ],
                       )),
+
+//______________________________________
+
+                  const Positioned(
+                    top: 570,
+                    left: 25,
+                    child: Text(
+                      "We Recommend",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+
                   //______________________________________
+
                   Positioned(
                       top: 200,
                       left: 70,
@@ -147,8 +319,7 @@ class _MainScreenAppState extends State<MainScreenApp> {
                                       item: cardData[index]);
                                 });
                           },
-                          child: Container(
-                              child: RecommendCard(item: cardData[index])),
+                          child: RecommendCard(item: cardData[index]),
                         );
                       },
                     ),

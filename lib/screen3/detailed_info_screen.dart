@@ -12,7 +12,7 @@ class DetailedInfoScreen extends StatefulWidget {
 
 class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
 //
-  Set<Accessory> selectedAccessories = <Accessory>{Accessory.Large};
+  Set<Accessory> selectedAccessories = <Accessory>{Accessory.large};
 //
   int _counter = 0;
 
@@ -274,7 +274,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                 },
                 segments: const <ButtonSegment<Accessory>>[
                   ButtonSegment<Accessory>(
-                    value: Accessory.Small,
+                    value: Accessory.small,
                     label: Text(
                       "Small",
                       style: TextStyle(
@@ -284,7 +284,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                     ),
                   ),
                   ButtonSegment<Accessory>(
-                    value: Accessory.Medium,
+                    value: Accessory.medium,
                     label: Text(
                       "Medium",
                       style: TextStyle(
@@ -294,7 +294,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                     ),
                   ),
                   ButtonSegment<Accessory>(
-                    value: Accessory.Large,
+                    value: Accessory.large,
                     label: Text(
                       "Large",
                       style: TextStyle(
@@ -399,8 +399,8 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
               borderRadius: BorderRadius.circular(8),
               gradient: const LinearGradient(
                 colors: [
-                  Color.fromARGB(218, 213, 90, 255),
-                  Color.fromARGB(255, 227, 203, 124),
+                  Color.fromARGB(218, 235, 113, 202),
+                  Color.fromARGB(255, 245, 153, 168),
                 ],
               ),
             ),
@@ -425,4 +425,4 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
   }
 }
 
-enum Accessory { Small, Medium, Large }
+enum Accessory { small, medium, large }

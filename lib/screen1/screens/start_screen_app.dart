@@ -60,11 +60,9 @@ class StartScreenApp extends StatelessWidget {
                                 color: const Color.fromARGB(67, 39, 37, 37),
                                 borderRadius: BorderRadius.circular(35),
                                 border: Border.all(
-                                    width: 0.5,
+                                    width: 0.15,
                                     color: const Color.fromARGB(
                                         186, 181, 176, 176))),
-
-                            //  ToDoShadowColor
                             child: const Column(
                               children: [
                                 SizedBox(height: 40),
@@ -78,10 +76,10 @@ class StartScreenApp extends StatelessWidget {
                                 SizedBox(height: 10),
                                 Text(
                                   "Explore Angi's most popular snack celection \n"
-                                  "and get instantly happy",
+                                  "and get instantly happy.",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      color: Colors.white, fontSize: 14),
+                                      color: Colors.white, fontSize: 13),
                                 ),
                                 SizedBox(height: 30),
                                 //Button "Order Now"
