@@ -388,7 +388,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
         ),
 
         ///
-        ///
+
         Positioned(
           top: 720,
           left: 25,
