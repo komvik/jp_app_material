@@ -95,6 +95,8 @@ class _MainScreenAppState extends State<MainScreenApp> {
                           onTap: () {
                             showModalBottomSheet(
                                 context: context,
+                                isScrollControlled: true,
+                                clipBehavior: Clip.none,
                                 builder: (context) {
                                   return DetailedInfoScreen(
                                       item: cardData[index]);
