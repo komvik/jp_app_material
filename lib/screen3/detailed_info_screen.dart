@@ -53,7 +53,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
           left: 15,
           child: SizedBox(
             width: 400,
-            height: 400,
+            height: 370,
             child: Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(35.0),
@@ -73,7 +73,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                           child: Image(
                               image: AssetImage("assets/icons/heart.png"))),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Text(
                         "200",
@@ -97,7 +97,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
                         fontSize: 24),
                   ),
                   //children 2
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 1),
                   const Padding(
                     padding: EdgeInsets.all(8),
                     child: Text(
@@ -251,7 +251,7 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
 //_________________________________________6.Container Choise
 
         Positioned(
-          top: 770,
+          top: 640,
           left: 20,
           child: Row(
             children: [
@@ -386,6 +386,40 @@ class _DetailedInfoScreenState extends State<DetailedInfoScreen> {
             ),
           ),
         ),
+
+        ///
+        ///
+        Positioned(
+          top: 720,
+          left: 25,
+          child: Container(
+            width: 380,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              gradient: const LinearGradient(
+                colors: [
+                  Color.fromARGB(218, 213, 90, 255),
+                  Color.fromARGB(255, 227, 203, 124),
+                ],
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(95, 12, 10, 10),
+              child: Text(
+                "Add to order for  ${widget.item.cardPrise}",
+                style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+          ),
+        ),
+
+        ///
+        ///
+        ///
       ],
     );
   }

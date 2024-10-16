@@ -73,8 +73,8 @@ class StartScreenApp extends StatelessWidget {
                                   TextStyle(color: Colors.white, fontSize: 14),
                             ),
                             SizedBox(height: 30),
+                            //Button "Order Now"
                             ChangeToMainScreenApp(),
-//
                           ],
                         ),
                       ),
